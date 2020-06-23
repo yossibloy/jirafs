@@ -1,0 +1,12 @@
+<div 
+[attr.jid]="j.id"
+[class]="'j-item' + (j.isBossy ?' Bossy':'')"
+(click) ="clickNote.emit()"
+(dblclick) ="dbclickNote.emit()"
+>
+
+<h3>{{j.name}}</h3>
+<lebel-span lebel="height " [span] ="j.height" ></lebel-span>
+<lebel-span lebel="color " [span] ="j.color" ></lebel-span>
+<button (click)="deleteNote.emit()" >delte</button>
+</div>

@@ -1,0 +1,13 @@
+.j-item{
+    width: 300px;
+    padding: 4px;
+    margin:auto;
+    text-align: center;
+    border: 3px solid skyblue;
+    background: gold;
+    color: red
+}
+
+.j-item.Bossy{
+    background:greenyellow
+}

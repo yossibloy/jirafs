@@ -1,0 +1,14 @@
+<div class="d" >
+    <ul [style.background]=rendColor>
+    <giraf-child
+        [j]="giraf" 
+        *ngFor="let giraf of jiraffArray"
+        (clickNote)="selectedg = giraf"
+        (deleteNote)="deletefn(giraf.id)" 
+        (dbclickNote) ="rendColor = giraf.color"
+        >
+    </giraf-child>
+    </ul>
+
+    <app-detils [j]="selectedg"></app-detils>
+</div>
